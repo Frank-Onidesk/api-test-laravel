@@ -16,6 +16,15 @@ class CustomersController extends Controller
     }
 
 
+    function edit($id) : mixed{
+        $row = DB::table('post_customers')->get($id);
+
+        return  View::make('edit')->with('edit', $row);
+    }
+
+
+
+
 
 
 }

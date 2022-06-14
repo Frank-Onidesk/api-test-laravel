@@ -34,6 +34,7 @@
      <table id="example" class="display table is-striped" style="width:100%">
      <thead>
             <tr>
+                <th>ID</th>
                 <th>Name</th>
                 <th data-class-name="priority">Email</th>
                 <th>Phone</th>
@@ -43,6 +44,7 @@
         <tbody>
         @foreach($list as $c)
         <tr>
+           <td>{{$c->id}}</td>
             <td>{{$c->name}}</td>
             <td>{{$c->email}}</td>
             <td>{{$c->phone}}</td>
@@ -52,10 +54,11 @@
 
         </tbody>
         <tfoot>
-            <tr> <th>Name</th>
-                <th >Email</th>
-                <th>Phone</th>
-                <th>Address</th>
+           <th>ID</th>
+            <th>Name</th>
+            <th >Email</th>
+            <th>Phone</th>
+            <th>Address</th>
             </tr>
         </tfoot>
     </table>

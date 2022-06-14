@@ -21,3 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //
 route::get('customers', [CustomersController::class, 'show']);
 
+
+route::get('customer/{id}', [CustomersController::class, 'edit']);
